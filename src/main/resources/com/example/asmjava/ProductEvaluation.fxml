@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asmjava.ProductEvaluaController">
+    <children>
+        <Button layoutX="564.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#getFile" prefHeight="37.0" prefWidth="82.0" text="Load File" />
+        <Button layoutX="654.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#saveFile" prefHeight="37.0" prefWidth="82.0" text="Save File" />
+        <Button layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#changeMainScene" prefHeight="36.0" prefWidth="37.0" text="&lt;" />
+        <Label fx:id="time" layoutX="165.0" layoutY="390.0" prefHeight="36.0" prefWidth="344.0">
+            <font>
+                <Font size="25.0" />
+            </font></Label>
+        <TextArea fx:id="textArea" layoutX="165.0" layoutY="100.0" prefHeight="267.0" prefWidth="571.0" />
+      <Label layoutX="345.0" layoutY="21.0" prefHeight="64.0" prefWidth="212.0" text="Product Evaluation">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

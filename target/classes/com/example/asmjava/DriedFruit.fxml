@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="451.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asmjava.DriedFruitController">
+    <children>
+        <VBox layoutX="37.0" layoutY="138.0" prefHeight="162.0" prefWidth="96.0" spacing="21.0">
+            <children>
+                <Label text="ID">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="10.0" layoutY="10.0" text="Name">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="10.0" layoutY="27.0" text="Weight">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="10.0" layoutY="44.0" prefHeight="27.0" prefWidth="64.0" text="Price/Kg">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="25.0" prefWidth="100.0" text="Temperature">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </opaqueInsets>
+        </VBox>
+        <VBox layoutX="158.0" layoutY="135.0" prefHeight="215.0" prefWidth="183.0" spacing="15.0">
+            <children>
+                <TextField fx:id="tfID" prefHeight="31.0" prefWidth="171.0" />
+                <TextField fx:id="tfName" layoutX="10.0" layoutY="10.0" />
+                <TextField fx:id="tfWeight" layoutX="10.0" layoutY="35.0" prefHeight="28.0" prefWidth="162.0" />
+                <TextField fx:id="tfPricePerKg" layoutX="10.0" layoutY="60.0" />
+                <TextField fx:id="tfTemperature" layoutX="10.0" layoutY="85.0" prefHeight="25.0" prefWidth="136.0" />
+            </children>
+        </VBox>
+        <Button fx:id="btnInsert" layoutX="37.0" layoutY="385.0" mnemonicParsing="false" onAction="#addDriedFruit" prefHeight="25.0" prefWidth="57.0" text="Insert" />
+        <Button fx:id="btnUpdate" layoutX="95.0" layoutY="385.0" mnemonicParsing="false" onAction="#updateDriedFruit" prefHeight="25.0" prefWidth="72.0" text="Update" />
+        <Button fx:id="btnDelete" layoutX="166.0" layoutY="385.0" mnemonicParsing="false" onAction="#deleteDriedFruit" prefHeight="25.0" prefWidth="66.0" text="Delete" />
+        <TableView fx:id="tvDriedFruit" layoutX="359.0" layoutY="122.0" onMouseClicked="#chooseItemFromTable" prefHeight="294.0" prefWidth="515.0">
+            <columns>
+                <TableColumn fx:id="colID" prefWidth="30.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="153.0" text="Name" />
+                <TableColumn fx:id="colWeight" prefWidth="64.0" text="Weight" />
+                <TableColumn fx:id="colPricePerKg" prefWidth="153.0" text="Price (1000$) per Kg" />
+                <TableColumn fx:id="colTemperature" prefWidth="114.0" text="Temperature" />
+            </columns>
+        </TableView>
+        <TextField fx:id="tfSearch" layoutX="490.0" layoutY="62.0" prefHeight="32.0" prefWidth="308.0" />
+        <Button layoutX="808.0" layoutY="62.0" mnemonicParsing="false" onAction="#searchDriedFruit" prefHeight="32.0" prefWidth="66.0" text="Search" />
+        <Button layoutX="19.0" layoutY="21.0" mnemonicParsing="false" onAction="#changeMainScene" prefHeight="32.0" prefWidth="37.0" text="&lt;" />
+        <Button layoutX="359.0" layoutY="62.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="32.0" prefWidth="117.0" text="Refresh Table" />
+        <Button layoutX="232.0" layoutY="385.0" mnemonicParsing="false" onAction="#refreshForm" prefHeight="25.0" prefWidth="109.0" text="Refresh Form" />
+        <Label layoutX="85.0" layoutY="19.0" prefHeight="36.0" prefWidth="131.0" text="Dried-Fruit" textAlignment="CENTER">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

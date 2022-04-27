@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="446.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.asmjava.MainController">
+    <children>
+        <Button layoutX="663.0" layoutY="69.0" mnemonicParsing="false" onAction="#changeDriedFruitScene" prefHeight="64.0" prefWidth="123.0" text="Dried-Fruit">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Button layoutX="663.0" layoutY="187.0" mnemonicParsing="false" onAction="#changeNutScene" prefHeight="64.0" prefWidth="123.0" text="Nut">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Button layoutX="637.0" layoutY="307.0" mnemonicParsing="false" onAction="#changeProductEvaluaScene" prefHeight="64.0" prefWidth="175.0" text="Product evaluation">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <TextField layoutX="74.0" layoutY="156.0" prefHeight="125.0" prefWidth="454.0" text="Dry-Product Management Application">
+            <font>
+                <Font size="25.0" />
+            </font></TextField>
+    </children>
+</AnchorPane>
